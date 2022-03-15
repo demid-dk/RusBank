@@ -1,0 +1,37 @@
+header > .container, section{
+    padding: 10vh 0;
+}
+header{
+    background: url(../img/graph.png), var(--color1);
+    background: url(../img/graph.png), -moz-linear-gradient(top,  var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/graph.png), -webkit-linear-gradient(top,  var(--color1) 0%,var(--color2) 100%);
+    background: url(../img/graph.png), linear-gradient(to bottom,  var(--color1) 0%,var(--color2) 100%);
+    filter: url(../img/graph.png), progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2), GradientType=0 );    
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.adv_item{
+    position: relative;
+}
+.adv_item::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 50px);
+    height: 5px;
+    width: 100px;
+    background: var(--color1);
+}
+.logo_container{
+    padding: 20px;
+}
+#logo1{
+    padding: 20px;
+}
+#company-name{
+    font-weight: 600;
+}
+.dk_circle{
+    font-size: 25px;
+}

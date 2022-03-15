@@ -1,0 +1,33 @@
+/* Основные цвета */
+:root {
+    --color1: #30E3CA;
+    --color2: #11999E;
+    --color3: #E4F9F5;
+    --color4: #c5e0da;
+    --color5: #40514E;
+}
+.bg1{
+    background: var(--color1);
+}
+.bg2{
+    background: var(--color2);
+}
+.bg3{
+    background: var(--color3);
+}
+.bg4{
+    background: var(--color4);
+}
+.bg5{
+    background: var(--color5);
+}
+/* Навигация */
+nav {
+    padding: 40px 0;
+    background: var(--color1);
+    box-shadow: 0px 0.3px 10px #000;
+}
+footer{
+    background: var(--color5);
+    padding: 5vh 0;
+}

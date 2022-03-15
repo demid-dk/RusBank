@@ -1,0 +1,14 @@
+header{
+    padding: 100px 0;
+    background: var(--color1);
+    background: -moz-linear-gradient(top,  var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(top,  var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to bottom,  var(--color1) 0%,var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2), GradientType=0 );
+}
+.dk_cards{
+    padding: 50px;
+}
+.card-body{
+    padding: 50px;
+}
