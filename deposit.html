@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/deposit.css">
+    <title>РусБанк</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <div class="container container-fluid">
+            <span class="navbar-brand">РусБанк</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDK"
+                aria-controls="navbarDK" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDK">
+                <div class="navbar-nav ms-auto">
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="card.html">Карты</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="credit.html">Кредиты</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="stocks.html">Акции</a></div>
+                    <div class="nav-item"><a class="nav-link active text-decoration-underline" aria-current="page" href="#">Вклады</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="busy.html">Бизнес</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="#footer">Контакты</a></div>
+                    <div class="nav-item"><a class="nav-link disable" aria-current="page">+7(123)456-78-90</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="">
+        <div class="container">
+            <h1>Вклады</h1>
+            <div class="card card-body" id="app">
+                <h2>Калькулятор вкладов</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="sum" class="form-label" >Сумма вклада</label>
+                        <input type="text" class="form-control" id="sum"
+                        placeholder="Введите сумму вклада"
+                        v-model="inputValue" 
+                        value="{{input value + рублей}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer id="footer">
+        <div class="container">
+            <h2 class="text-center text-white mb-4 text-decoration-underline text-uppercase">Контакты</h2>
+            <div class="row">
+                <div class="col text-center text-white">
+                    <h4>Телефон</h4>
+                    <p>+7(123)456-78-90</p>
+                </div>
+                <div class="col text-center text-white">
+                    <h4>Эл. почта</h4>
+                    <p>email@email.ru</p>
+                </div>
+                <div class="col text-center text-white">
+                    <h4>Адрес</h4>
+                    <p>Россия, Москва, 119571, просп. Вернадского, 131</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="js/deposit.js"></script>
+</body>
+</html>
