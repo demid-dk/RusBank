@@ -39,7 +39,6 @@ header{
     font-size: 25px;
 }
 .dk_more{
-    color: var(--color2);
     margin: 0 auto;
 }
 @media screen and (max-width: 767px) {

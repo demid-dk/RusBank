@@ -24,7 +24,6 @@
                     <div class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></div>
                     <div class="nav-item"><a class="nav-link active" aria-current="page" href="card.html">Карты</a></div>
                     <div class="nav-item"><a class="nav-link active" aria-current="page" href="credit.html">Кредиты</a></div>
-                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="stocks.html">Акции</a></div>
                     <div class="nav-item"><a class="nav-link active text-decoration-underline" aria-current="page" href="#">Вклады</a></div>
                     <div class="nav-item"><a class="nav-link active" aria-current="page" href="busy.html">Бизнес</a></div>
                     <div class="nav-item"><a class="nav-link active" aria-current="page" href="#footer">Контакты</a></div>
@@ -121,6 +120,22 @@
         <div class="container">
             <h1 class="text-center mb-5">Оформить вклад</h1>
             <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6 col-sm-12">
+                    <label for="sum" class="form-label" >Сумма вклада</label>
+                    <input type="text" inputmode="numeric" class="form-control" id="sum" placeholder="Введите сумму вклада">
+                    <div class="d-flex justify-content-between">
+                        <p class="form-text mb-0">от 50 000</p>
+                        <p class="form-text mb-0">до 3 000 000</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <label for="currency" class="form-label">Валюта</label>
+                    <select class="form-select" id="currency" required>
+                        <option selected>Рубли РФ</option>
+                        <option>Доллары США</option>
+                        <option>Евро</option>
+                    </select>
+                </div>
                 <div class="col-md-4">
                     <label for="validationCustom01" class="form-label">Имя<span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="validationCustom01" placeholder="Введите Имя" required>

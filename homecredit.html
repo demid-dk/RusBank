@@ -38,29 +38,55 @@
             <div class="card card-body bg3">
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="dk_color2" href="card.html">Карты</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Кредитная карта</li>
+                        <li class="breadcrumb-item"><a class="dk_color2" href="credit.html">Кредиты</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Ипотека</li>
                     </ol>
                 </div>
-                <h1 class="text-center mb-5">Оформить карту</h1>
+                <h1 class="text-center mb-5">Оформить ипотеку</h1>
                 <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                        <label for="validationCustom01" class="form-label">Имя<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="Введите Имя" required>
+                    <div class="col-12">
+                        <label for="currency" class="form-label">Цель кредита</label>
+                        <select class="form-select" id="currency" required>
+                            <option selected>Квартира в новостройке</option>
+                            <option>Квартира на вторичном рынке</option>
+                            <option>Купить дом</option>
+                            <option>Построить дом</option>
+                            <option>Купить землю или дачный дом</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="sum" class="form-label" >Сумма Кредита</label>
+                        <input type="text" inputmode="numeric" class="form-control" id="sum" value="50 000 рублей">
+                        <div class="d-flex justify-content-between">
+                            <p class="form-text mb-0">от 375 тыс.</p>
+                            <p class="form-text mb-0">до 50 млн.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="sum" class="form-label" >На срок</label>
+                        <input type="text" inputmode="numeric" class="form-control" id="period" value="3 мес.">
+                        <div class="d-flex justify-content-between">
+                            <p class="form-text mb-0">от 1 года</p>
+                            <p class="form-text mb-0">до 30 лет</p>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Фамилия<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Введите Фамилию" required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Введите Фамилию" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Имя<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Введите Имя" required>
                     </div>
                     <div class="col-md-4">
                         <label for="validationCustom03" class="form-label">Отчество</label>
                         <input type="text" class="form-control" id="validationCustom03" placeholder="Введите Отчество" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="validationCustom04" class="form-label">Почта<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="validationCustom04" placeholder="name@example.com" required>
+                        <label for="validationCustom04" class="form-label">Дата рождения<span class="text-danger">*</span></label>
+                        <input type="text" inputmode="numeric" class="form-control" id="validationCustom04" placeholder="01.01.2021" required>
                         <div class="invalid-feedback">
-                            Пожалуйста, введите Вашу эл почту!
+                            Пожалуйста, введите Вашу дату рождения!
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -68,6 +94,13 @@
                         <input type="text" class="form-control" id="validationCustom05" value="+7" required>
                         <div class="invalid-feedback">
                             Пожалуйста, введите Ваш номер телефона!
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom06" class="form-label">Серия и номер паспорта<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom06" placeholder="0000 000000" required>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите серию и номер Вашего паспорта!
                         </div>
                     </div>
                     <div class="col-12">
