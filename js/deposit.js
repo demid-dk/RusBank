@@ -1,5 +1,9 @@
 Vue.createApp({
     data: () => ({
-        inputValue: ''
-    })
+        inputValue: '',
+        newValue: this.inputValue + ' ' + this.currency,
+        currency: 'рублей'
+    }),
+    methods: {
+    }
 }).mount("#app")
