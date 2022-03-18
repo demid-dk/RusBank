@@ -1,0 +1,32 @@
+header{
+    background: var(--color1);
+    background: -moz-linear-gradient(top,  var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(top,  var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to bottom,  var(--color1) 0%,var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2), GradientType=0 );    
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-item{
+    padding: 50px;
+}
+.card.container-fluid{
+    height: 300px;
+    position: relative;
+}
+.card.container-fluid a{
+    position: absolute;
+    bottom: 20px;
+}
+.price::after{
+    content: "/мес";
+}
+.dk_btn{
+    margin: 0px auto;
+}
+@media screen and (max-width: 767px) {
+    .carousel{
+        height: 550px;
+    }
+}

@@ -1,4 +1,3 @@
-/* Основные цвета */
 :root {
     --color1: #30E3CA;
     --color2: #11999E;
@@ -21,13 +20,36 @@
 .bg5{
     background: var(--color5);
 }
-/* Навигация */
+.dk_color1{
+    color: var(--color1);
+}
+.dk_color2{
+    color: var(--color2);
+}
+.dk_color3{
+    color: var(--color3);
+}
+.dk_color4{
+    color: var(--color4);
+}
+.dk_color5{
+    color: var(--color5);
+}
 nav {
     padding: 40px 0;
     background: var(--color1);
     box-shadow: 0px 0.3px 10px #000;
 }
+header, section{
+    padding: 70px 0;
+}
+header{
+    padding-top: 100px;
+}
 footer{
     background: var(--color5);
     padding: 5vh 0;
+}
+a.dk_color2:hover{
+    color: #187ba8;
 }

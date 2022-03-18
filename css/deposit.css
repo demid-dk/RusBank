@@ -1,0 +1,17 @@
+header{
+    background: var(--color1);
+    background: -moz-linear-gradient(top,  var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(top,  var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to bottom,  var(--color1) 0%,var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2), GradientType=0 );
+}
+#depositBtn{
+    max-width: 200px;
+    align-self: center;
+}
+.dk_icon_currency{
+    font-size: 140px;
+}
+.dk_icon{
+    font-size: 200px;
+}

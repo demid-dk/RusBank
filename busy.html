@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="РусБанк - банк, предоставляющий дебетовые, кредитные карты, кредиты на различные цели, вклады по выгодным процентам и более зорошие условия для российских разработчиков">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/busy.css">
+    <title>Русбанк</title>
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <div class="container container-fluid">
+            <span href="#" class="navbar-brand">РусБанк</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="card.html">Карты</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="credit.html">Кредиты</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="deposit.html">Вклады</a></div>
+                    <div class="nav-item"><a class="nav-link active text-decoration-underline" aria-current="page" href="#">Бизнес</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="#footer">Контакты</a></div>
+                    <div class="nav-item"><span class="nav-link disable" aria-current="page">+7(123)456-78-90</span></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="card card-body bg3">
+                <div id="dkCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item col-12 active text-center">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Открыть счёт</h2>
+                                <h2 class="mb-3">4 тарифа для разных целей</h2>
+                                <h2 class="mb-4">Реквизиты в день заявки</h2>
+                                <a id="accBtn" href="accform.html" class="btn btn-lg bg1 mb-3">Открыть</a>
+                                <a href="#tariffs" class="dk_color2">Посмотреть тарифы</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Бизнес-карта</h2>
+                                <h2 class="mb-3">Кэшбэк до 5%</h2>
+                                <h2 class="mb-4">Оформление за пару минут</h2>
+                                <a id="bCardBtn" href="bcard.html" class="btn btn-lg bg1 mb-3">Оформить</a>
+                                <a href="#bCard" class="dk_color2">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Открыть ИП или ООО</h2>
+                                <h2 class="mb-3">В офисе или самостоятельно</h2>
+                                <h2 class="mb-4">Без госпошлины</h2>
+                                <a id="openOrgBtn" href="openorg.html" class="btn btn-lg bg1 mb-3">Открыть</a>
+                                <a href="#openOrg" class="dk_color2">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#dkCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#dkCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="tariffs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3"><h1>Откройте счёт для бизнеса</h1></div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="container-fluid card card-body bg3">
+                        <h3>Ноль для старта</h3>
+                        <p>Тариф с бесплатным обслуживанием счёта</p>
+                        <h5 class="price">0<i class="icon-rouble"></i></h5>
+                        <a href="accform.html" class="btn btn-lg bg1">Оформить</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="container-fluid card card-body bg3">
+                        <h3>Хороший старт</h3>
+                        <p>Оптимальный тариф для начинающего бизнеса</p>
+                        <h5 class="price">666<i class="icon-rouble"></i></h5>
+                        <a href="accform.html" class="btn btn-lg bg1">Оформить</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="container-fluid card card-body bg3">
+                        <h3>Удачный выбор</h3>
+                        <p>Много операций на счету</p>
+                        <h5 class="price">2 590<i class="icon-rouble"></i></h5>
+                        <a href="accform.html" class="btn btn-lg bg1">Оформить</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="container-fluid card card-body bg3">
+                        <h3>Максимум</h3>
+                        <p>Для компаний с высокой финансовой активностью</p>
+                        <h5 class="price">9 990<i class="icon-rouble"></i></h5>
+                        <a href="accform.html" class="btn btn-lg bg1">Оформить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bCard" class="bg3">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 mb-3"><h1>Бизнес-карта для ИП и юр. лиц</h1></div>
+                <li class="col-md-4 col-12 mb-3">Бесплатное обслуживание</li>
+                <li class="col-md-4 col-12 mb-3">Привязана к расчётному счёту</li>
+                <li class="col-md-4 col-12 mb-3">Для бизнес-расходов и личных трат</li>
+                <div class="col-12 d-flex justify-content-center"><a href="bcard.html" class="btn btn-lg bg1 dk_btn">Оформить</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="openOrg">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 mb-3"><h1>Открыть ИП или ООО</h1></div>
+                <div class="col-md-4 col-12 mb-3">
+                    <h3>В офисе или самостоятельно</h3>
+                    <p>Зарегистрируйте бизнес онлайн или с помощью сотрудника в офисе банка</p>
+                </div>
+                <div class="col-md-4 col-12 mb-3">
+                    <h3>Поддержка российских разработчиков</h3>
+                    <p>Привилегии отечественным разработчикам: меньше проценты по кредиту, больше кэшбэк и тд</p>
+                </div>
+                <div class="col-md-4 col-12 mb-3">
+                    <h3>Личный менеджер</h3>
+                    <p>Свой человек в банке — быстро решает вопросы в чате или по телефону</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center"><a href="openorg.html" class="btn btn-lg bg1 dk_btn">Оставить заявку</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <h2 class="text-center text-white mb-4 text-decoration-underline text-uppercase">Контакты</h2>
+            <div class="row">
+                <div class="col text-center text-white">
+                    <h4>Телефон</h4>
+                    <p>+7(123)456-78-90</p>
+                </div>
+                <div class="col text-center text-white">
+                    <h4>Эл. почта</h4>
+                    <p>email@email.ru</p>
+                </div>
+                <div class="col text-center text-white">
+                    <h4>Адрес</h4>
+                    <p>Россия, Москва, 119571, просп. Вернадского, 131</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
