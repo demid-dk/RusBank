@@ -1,7 +1,7 @@
 Vue.createApp({
     data: () => ({
         inputValue: '',
-        msgs: ['Здравствуйте, чем могу Вам помочь?'],
+        msgs: [],
     }),
     methods:{
         addNewMsg(){
