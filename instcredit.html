@@ -39,54 +39,77 @@
             <div class="card card-body bg3">
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="dk_color2" href="card.html">Карты</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Дебетовая карта</li>
+                        <li class="breadcrumb-item"><a href="credit.html">Кредиты</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Рассрочка</li>
                     </ol>
                 </div>
-                <h1 class="text-center mb-5">Оформить карту</h1>
+                <h1 class="text-center mb-5">Оформить рассрочку</h1>
                 <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Имя<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Введите Имя" required>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="sum" class="form-label" >Сумма</label>
+                        <input type="text" inputmode="numeric" class="form-control" id="sum" value="20 000 рублей">
+                        <div class="d-flex justify-content-between">
+                            <p class="form-text mb-0">от 20 000</p>
+                            <p class="form-text mb-0">до 500 000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="sum" class="form-label" >На срок</label>
+                        <input type="text" inputmode="numeric" class="form-control" id="period" value="3 мес.">
+                        <div class="d-flex justify-content-between">
+                            <p class="form-text mb-0">от 3 мес.</p>
+                            <p class="form-text mb-0">до 12 мес.</p>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label">Фамилия<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Введите Фамилию" required>
+                        <label for="validationCustom02" class="form-label">Фамилия<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Введите Фамилию" required>
                     </div>
                     <div class="col-md-4">
-                    <label for="validationCustom03" class="form-label">Отчество</label>
-                    <input type="text" class="form-control" id="validationCustom03" placeholder="Введите Отчество" required>
+                        <label for="validationCustom01" class="form-label">Имя<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Введите Имя" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Отчество</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Введите Отчество" required>
                     </div>
                     <div class="col-md-6">
-                    <label for="validationCustom04" class="form-label">Почта<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="validationCustom04" placeholder="name@example.com" required>
-                    <div class="invalid-feedback">
-                        Пожалуйста, введите Вашу эл почту!
-                    </div>
+                        <label for="validationCustom04" class="form-label">Дата рождения<span class="text-danger">*</span></label>
+                        <input type="text" inputmode="numeric" class="form-control" id="validationCustom04" placeholder="01.01.2021" required>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите Вашу дату рождения!
+                        </div>
                     </div>
                     <div class="col-md-6">
-                    <label for="validationCustom05" class="form-label">Телефон<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="validationCustom05" value="+7" required>
-                    <div class="invalid-feedback">
-                        Пожалуйста, введите Ваш номер телефона!
+                        <label for="validationCustom05" class="form-label">Телефон<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom05" value="+7" required>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите Ваш номер телефона!
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom06" class="form-label">Серия и номер паспорта<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom06" placeholder="0000 000000" required>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите серию и номер Вашего паспорта!
                         </div>
                     </div>
                     <div class="col-12">
                         <span class="text-danger">* - Поля, обязательные для заполнения</span>
                     </div>
                     <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                        Соглашаюсь с обработкой данных 
-                        </label>
-                        <div class="invalid-feedback">
-                        Вы должны согласиться, прежде чем отправить данные
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Соглашаюсь с обработкой данных 
+                            </label>
+                            <div class="invalid-feedback">
+                                Вы должны согласиться, прежде чем отправить данные
+                            </div>
                         </div>
                     </div>
-                    </div>
                     <div class="col-12">
-                    <button class="btn bg2 text-white" type="submit">Отправить</button>
+                        <button class="btn bg2 text-white" type="submit">Отправить</button>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="РусБанк - банк, предоставляющий дебетовые, кредитные карты, кредиты на различные цели, вклады по выгодным процентам и более зорошие условия для российских разработчиков">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/credit.css">
+    <title>РусБанк</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <div class="container container-fluid">
+            <span href="#" class="navbar-brand">РусБанк</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="card.html">Карты</a></div>
+                    <div class="nav-item"><a class="nav-link active text-decoration-underline" aria-current="page" href="#">Кредиты</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="deposit.html">Вклады</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="busy.html">Бизнес</a></div>
+                    <div class="nav-item"><a class="nav-link active" aria-current="page" href="#footer">Контакты</a></div>
+                    <div class="nav-item"><span class="nav-link disable" aria-current="page">+7(123)456-78-90</span></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <div class="card card-body bg3">
+                <div id="dkCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#dkCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item col-12 active text-center">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Кредит на любые цели</h2>
+                                <h2 class="mb-3">Быстрая выдача денег на карту</h2>
+                                <h2 class="mb-4">Нужны только паспорт и анкета</h2>
+                                <a id="fCreditBtn" href="fcredit.html" class="btn btn-lg bg1 mb-3">Оформить</a>
+                                <a href="#fCredit" class="dk_color2">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Рассрочка</h2>
+                                <h2 class="mb-3">Без подписания бумажных договоров</h2>
+                                <h2 class="mb-4">Оформление за пару минут</h2>
+                                <a id="instCreditBtn" href="instcredit.html" class="btn btn-lg bg1 mb-3">Оформить</a>
+                                <a href="#instCredit" class="dk_color2">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Кредит на образование</h2>
+                                <h2 class="mb-3">Низкая ставка 3% за счёт госсубсидий</h2>
+                                <h2 class="mb-4">Оформить можно с 14 лет</h2>
+                                <a id="eduCreditBtn" href="educredit.html" class="btn btn-lg bg1 mb-3">Оформить</a>
+                                <a href="#eduCredit" class="dk_color2">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid d-flex flex-column align-items-center">
+                                <h2 class="mb-4 display-2">Ипотека</h2>
+                                <h2 class="mb-3">Ставка от 19%</h2>
+                                <h2 class="mb-4">Первый взнос от 20%</h2>
+                                <a id="homeCreditBtn" href="homecredit.html" class="btn btn-lg bg1 mb-3">Оформить</a>
+                                <a href="#homeCredit" class="dk_color2">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#dkCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#dkCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="fCredit">
+        <div class="container">
+            <div class="row mb-2">
+                <h1 class="col-12 text-center text-uppercase mb-4">Кредит на любые цели</h1>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Онлайн-решение</h4>
+                    <p>Быстро и доступно</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Срок кредита</h4>
+                    <p>От 3-х месяцев до 3-х лет</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Доставка кредита</h4>
+                    <p>на бесплатную дебетовую карту</p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="fcredit.html" class="btn btn-lg bg1">Оформить онлайн</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="instCredit" class="bg3">
+        <div class="container">
+            <div class="row mb-2">
+                <h1 class="col-12 text-center text-uppercase mb-4">Рассрочка</h1>
+                <div class="col-md-3 col-sm-12">
+                    <h4>Не нужно копить на крупную покупку</h4>
+                    <p>Банк оплатит за Вас уже сегодня</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h4>Ваш бюджет в порядке</h4>
+                    <p>Вы не выкладываете сразу большую сумму, а распределяете её по времени</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h4>Без переплаты</h4>
+                    <p>Цена товара остаётся такой же, как на ценнике</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h4>Всё происходит онлайн</h4>
+                    <p> Весь процесс покупки в рассрочку происходит в цифровом формате — вам не придётся подписывать бумажные документы и общаться с кредитным экспертом банка</p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="instcredit.html" class="btn btn-lg bg1">Оформить онлайн</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="eduCredit">
+        <div class="container">
+            <div class="row mb-2">
+                <h1 class="col-12 text-center text-uppercase mb-4">Кредит на образование</h1>
+                <h2 class="col-12 mb-3">О кредите</h2>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Справки о доходах не нужны</h4>
+                    <p>Студенту необязательно иметь заработок</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Учитесь где нравится</h4>
+                    <p>Выбирайте любой вуз в любом регионе России. Главное — с действующей лицензией и аккредитацией РФ</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Можно погасить раньше срока</h4>
+                    <p>При желании вы можете вернуть кредит раньше срока без комиссии</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <h2 class="col-12 mb-3">Как это работает</h2>
+                <div class="col-md-4 col-sm-12">
+                    <li>Из общей ставки по кредиту (15,37% годовых) государство оплатит за вас 12,37%. Вам останется оплатить всего 3%</li>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <li>Кредит можно взять на оплату любого периода учёбы. Это может быть один семестр, год или всё обучение целиком.</li>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <li>Весь срок обучения плюс 9 месяцев после окончания вы платите только проценты по кредиту — остальное вернёте в течение 15 лет после выпуска.</li>
+                </div>
+            </div>
+            <div class="row">
+                <a href="educredit.html" class="btn btn-lg bg1">Оформить онлайн</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="homeCredit" class="bg3">
+        <div class="container">
+            <div class="row mb-2">
+                <h1 class="col-12 text-center text-uppercase mb-4">Ипотека</h1>
+                <h2 class="col-12 mb-3">Требования к заёмщику</h2>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Возраст</h4>
+                    <p>Не младше 18 лет и не старше 75 лет на момент возврата кредита</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Стаж работы</h4>
+                    <p>От 3-х месяцев на нынешнем месте работы</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>Созаёмщик</h4>
+                    <p>Супруг(а) — всегда созаёмщик, если собственность не разделена по брачному договору</p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="homecredit.html" class="btn btn-lg bg1">Оформить онлайн</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <h2 class="text-center text-white mb-4 text-decoration-underline text-uppercase">Контакты</h2>
+            <div class="row">
+                <div class="col text-center text-white">
+                    <h4>Телефон</h4>
+                    <p>+7(123)456-78-90</p>
+                </div>
+                <div class="col text-center text-white">
+                    <h4>Эл. почта</h4>
+                    <p>email@email.ru</p>
+                </div>
+                <div class="col text-center text-white">
+                    <h4>Адрес</h4>
+                    <p>Россия, Москва, 119571, просп. Вернадского, 131</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

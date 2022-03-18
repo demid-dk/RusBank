@@ -11,20 +11,6 @@ header{
 .carousel-item{
     padding: 50px;
 }
-.card.container-fluid{
-    height: 300px;
-    position: relative;
-}
-.card.container-fluid a{
-    position: absolute;
-    bottom: 20px;
-}
-.price::after{
-    content: "/мес";
-}
-.dk_btn{
-    margin: 0px auto;
-}
 @media screen and (max-width: 767px) {
     .carousel{
         height: 550px;
