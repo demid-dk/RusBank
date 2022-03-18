@@ -40,6 +40,25 @@ nav {
     background: var(--color1);
     box-shadow: 0px 0.3px 10px #000;
 }
+#chat{
+    position: fixed;
+    z-index: 1000;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 3px 3px 10px #40514E;
+    transition: 0.2s ease-in-out;
+}
+#chat:hover{
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+}
+#chat > .icon-chat::before{
+    margin: 20px;
+}
 header, section{
     padding: 70px 0;
 }
