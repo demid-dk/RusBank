@@ -40,7 +40,7 @@ nav {
     background: var(--color1);
     box-shadow: 0px 0.3px 10px #000;
 }
-#chat{
+#chatBtn{
     position: fixed;
     z-index: 1000;
     font-size: 60px;
@@ -51,13 +51,40 @@ nav {
     box-shadow: 3px 3px 10px #40514E;
     transition: 0.2s ease-in-out;
 }
-#chat:hover{
+#chatBtn:hover{
     cursor: pointer;
     width: 110px;
     height: 110px;
 }
-#chat > .icon-chat::before{
+#chatBtn > .icon-chat::before{
     margin: 20px;
+}
+#chat{
+    position: fixed;
+    z-index: 800;
+    bottom: 40px;
+    right: 40px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 3px 10px #40514E;
+}
+#chatBody{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+#chatContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+.chat_message{
+    padding: 10px;
+    margin: 20px;
+    max-width: 70%;
 }
 header, section{
     padding: 70px 0;

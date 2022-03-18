@@ -34,7 +34,15 @@
         </div>
     </nav>
 
-    <div id="chat" class="rounded-circle bg1"><i class="icon-chat"></i></div>
+    <div id="chatBtn" class="rounded-circle bg1"><i class="icon-chat"></i></div>
+    <div id="chat" class="bg2 rounded">
+        <div id="chatBody" class="container-fluid">
+            <div id="chatContent">
+                <div class="rounded chat_message bg4" v-for="m in msgs">{{ m }}</div>
+            </div>
+            <input type="text" id="chatInput" class="form-control" v-model="inputValue" @keypress.enter="addNewMsg">
+        </div>
+    </div>
 
     <header>
         <div class="container">
@@ -180,6 +188,7 @@
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="js/chat.js"></script>
 </body>
 </html>
